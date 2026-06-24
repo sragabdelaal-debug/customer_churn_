@@ -335,7 +335,7 @@ with tab1:
                 churned['MonthlyCharges'].dropna().values
             ]
             bp = ax.boxplot(data_to_plot, patch_artist=True,
-                            labels=['Stayed', 'Churned'], widths=0.4)
+                tick_labels=['Stayed', 'Churned'], widths=0.4)
             bp['boxes'][0].set_facecolor(BLUE)
             bp['boxes'][1].set_facecolor(RED)
             for patch in bp['boxes']:
